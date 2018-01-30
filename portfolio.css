@@ -89,15 +89,6 @@ li a:hover {
   width:100%;
 }
 
-.wrapper{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	width: 900px;
-	height: 900px;
-  grid-gap: 0.5cm;
-	margin:auto;
-}
-
 .portpic{
 	width:300px;
 	height:300px;
@@ -115,13 +106,22 @@ li a:hover {
 	font-style:italic;
   color:#4863A0;
 }
-#logo-holder {position:relative; width:300px; height:300px; /*dimensions of image*/}
-#logo-holder .flip {width:300px; height:300px},
-#logo-holder .text {transition: opacity 0.5s ease-in-out;}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  grid-gap: 0.8cm;
+  margin:auto;
+}
+
+#logo-holder {position:relative; width:600px; height:600px; /*dimensions of image*/}
+#logo-holder .flip {width:600px; height:600px},
+#logo-holder .text {transition: opacity .5s ease, visibility .5s}
 #logo-holder .text {position:absolute; top:0; left:0; opacity:0;}
 
 #logo-holder:hover .flip {opacity:0;}
-#logo-holder:hover .text {opacity:1;}
+#logo-holder:hover .text {width:600px; height:600px; opacity:1; background-color:lightgray;}
 footer {
 	margin: auto;
 	width:15%;
